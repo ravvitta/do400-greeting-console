@@ -24,7 +24,7 @@ pipeline{
 	stage('Release') {
  	   steps {
                sh '''
-               oc project ravivitta-jenkins
+               oc project ravivittal-s2i
                oc start-build greeting-console  --follow --wait
                '''
     	   }
